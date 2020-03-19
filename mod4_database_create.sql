@@ -2,7 +2,8 @@
 drop database if exists sqlbootcamp_mod4;
 create database sqlbootcamp_mod4;
 use sqlbootcamp_mod4;
--- create the customer table 
+
+-- create the customer table
 create table customer (
 	id 				int 			not null primary key auto_increment,
 	name 			varchar(50) 	not null,
@@ -13,6 +14,7 @@ create table customer (
 	active 			bit 			not null default 1
 );
 
+-- add some data to customer table
 Insert into customer (name, city, state, isCorpAcct, creditLimit)
 values ('Mercury LTD', 'Newport', 'KY', 0, 100000);
 Insert into customer (name, city, state, isCorpAcct, creditLimit)
@@ -28,7 +30,7 @@ values ('Uranus LPA', 'Indianapolis', 'IN', 1, 1000000);
 Insert into customer (name, city, state, isCorpAcct, creditLimit)
 values ('Neptune INC', 'Cleveland', 'OH', 1, 1000000);
 
-
+-- create the orders table
 create table orders (
 	id 				int 			not null primary key auto_increment,
 	customerID 		int 			not null,
@@ -43,6 +45,7 @@ create table orders (
 /*    this is a multi
       line comment */
 
+-- add some orders to our orders table
 Insert into orders (date, total, customerID)
 values ('2017-12-31', 778, 6);
 Insert into orders (date, total, customerID)
