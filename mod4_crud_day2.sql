@@ -21,3 +21,5 @@ Insert into customer (id, name, city, state, iscorpacct, creditLimit, active)
 	Values (1000, 'Pluto LLC', 'Cincinnati', 'OH', 1, 1000000, 1);
  
  
+-- CRDUD: Create Read Update Delete -- 
+ 
